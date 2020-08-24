@@ -395,5 +395,9 @@ SRC_AUDIO_HAL_DIR := hardware/qcom-caf/msm8996/audio
 PRODUCT_SOONG_NAMESPACES += \
     hardware/qcom-caf/msm8996
 
+# GoogleCamera Go
+PRODUCT_PACKAGES += \
+GoogleCameraGo
+
 # Inherit the proprietary files
 $(call inherit-product, vendor/xiaomi/msm8953-common/msm8953-common-vendor.mk)
