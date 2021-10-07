@@ -284,6 +284,7 @@ PRODUCT_COPY_FILES += \
     system/core/libprocessgroup/profiles/task_profiles_28.json:$(TARGET_COPY_OUT_VENDOR)/etc/task_profiles.json
 
 # QMI
+$(call inherit-product, external/json-c/Android.configure.mk)
 PRODUCT_PACKAGES += \
     libjson \
     libqti_vndfwk_detect \
