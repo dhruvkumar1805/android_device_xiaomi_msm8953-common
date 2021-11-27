@@ -1,0 +1,4 @@
+allow surfaceflinger device:chr_file { ioctl  open  read  write };
+allow surfaceflinger sysfs:file { getattr  open  read };
+allow surfaceflinger vendor_default_prop:file { getattr  open };
+allow surfaceflinger vendor_file:file { execute  getattr  open  read };

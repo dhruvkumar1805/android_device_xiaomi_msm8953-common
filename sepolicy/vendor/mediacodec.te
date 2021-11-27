@@ -1,0 +1,4 @@
+allow mediacodec default_android_hwservice:hwservice_manager { find };
+allow mediacodec init:binder { call };
+allow mediacodec sysfs:file { getattr  open  read };
+

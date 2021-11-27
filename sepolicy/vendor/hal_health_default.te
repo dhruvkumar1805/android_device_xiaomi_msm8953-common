@@ -1,0 +1,8 @@
+allow hal_health_default init:binder { call };
+allow hal_health_default sysfs:file { getattr  open  read };
+allow hal_sensors_default device:chr_file { ioctl  open  read };
+allow hal_sensors_default hal_sensors_default:socket { create  ioctl  read  write };
+allow hal_sensors_default mnt_vendor_file:dir { getattr };
+allow hal_sensors_default mnt_vendor_file:file { open  read };
+allow hal_sensors_default sysfs:dir { open  read };
+allow hal_sensors_default sysfs:file { open  read };

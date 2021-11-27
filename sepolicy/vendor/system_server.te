@@ -1,3 +1,5 @@
 # Input devices
 r_dir_file(system_server, vendor_idc_file);
 r_dir_file(system_server, vendor_keylayout_file);
+allow system_server block_device:blk_file { getattr  ioctl  open  read };
+allow system_server init:binder { call  transfer };

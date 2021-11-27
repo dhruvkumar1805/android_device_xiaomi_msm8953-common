@@ -1,3 +1,10 @@
 # Dirac
 get_prop(hal_audio_default, dirac_prop)
 set_prop(hal_audio_default, dirac_prop)
+
+allow hal_audio_default device:chr_file { ioctl  open  read };
+allow hal_audio_default sysfs:dir { open  read };
+allow hal_audio_default sysfs:file { getattr  open  read };
+allow hal_audio_default vendor_data_file:dir { add_name  write };
+allow hal_audio_default vendor_data_file:file { create  getattr  open  read };
+
