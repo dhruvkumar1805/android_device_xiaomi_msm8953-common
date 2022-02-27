@@ -184,3 +184,8 @@ persist.sys.binary_xml=false
 
 # Time Services
 persist.timed.enable=true
+
+# Iorap
+ro.iorapd.enable=true
+iorapd.perfetto.enable=true
+iorapd.readahead.enable=true
