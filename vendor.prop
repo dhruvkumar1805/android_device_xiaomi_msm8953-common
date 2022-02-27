@@ -172,3 +172,8 @@ ro.soc.model=MSM8953
 
 # Time Services
 persist.timed.enable=true
+
+# Iorap
+ro.iorapd.enable=true
+iorapd.perfetto.enable=true
+iorapd.readahead.enable=true
