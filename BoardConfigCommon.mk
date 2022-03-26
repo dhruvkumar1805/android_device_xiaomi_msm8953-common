@@ -136,7 +136,6 @@ TARGET_USERIMAGES_USE_EXT4 := true
 #include device/qcom/sepolicy-legacy-um/SEPolicy.mk
 #BOARD_VENDOR_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/vendor
 BOARD_VENDOR_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy_minimal
-SELINUX_IGNORE_NEVERALLOWS := true
 
 # Treble
 PRODUCT_FULL_TREBLE_OVERRIDE := true
